@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bailey's Electrical Services LLC</title>
+    <link rel="stylesheet" href=".//styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo-link">
+        <img src="img/BESLogo.jpg" alt="Company Logo" class="logo-image">
+      </a>
+      <nav class="navbar">
+          <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li class="dropdown">
+                  <a href="#" class="nav-link dropdown-toggle">Services</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="Services/services_repo/electrical.html" class="dropdown-item">Residential Electrical</a></li>
+                      <li><a href="Services/services_repo/commercial.html" class="dropdown-item">Commercial Electrical</a></li>
+                      <li><a href="Services/services_repo/generac.html" class="dropdown-item">Generac</a></li>
+                      <li><a href="Services/services_repo/security.html" class="dropdown-item">Security</a></li>
+                      <li><a href="Services/services_repo/smart_home.html" class="dropdown-item">Smart Home</a></li>
+                      <li><a href="Services/services_repo/networking.html" class="dropdown-item">Networking</a></li>
+                  </ul>
+              </li>
+              <li><a href="Services/services_repo/tools_&_supplies.html" class="nav-link">Showroom & Store</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h2>Welcome to Bailey's Electrical Services, LLC</h2>
+          <p>Located in Lewisburg, Serving All of Pennsylvania.</p>
+          <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="img/milwaukee_header_logo.jpg" alt="Slide 1">
+          </div>
+          <div class="slide fade">
+            <img src="img/unv.png" alt="Slide 2">
+          </div>
+          <div class="slide fade">
+            <img src="Services/services_repo/services_imgs/store_storage.jpg" alt="Slide 3">
+          </div>
+          <!-- Add more slides as needed -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      
+
+      <section id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            Bailey's Electrical Services, LLC is your one stop shop for all of
+            your electrical and security needs. We also have direct partnerships
+            with Alarm.com, GENERAC, and offer a wide variety of Milwaukee tools
+            in our Lewisburg, PA showroom and store! Services we offer include
+            residential electrical, commercial electrical, security alarm
+            systems, security camera systems, access control systems, smart home
+            and home automation, networking, and much more!
+          </p>
+        </div>
+      </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Phone: (570) 939-5566</li>
+            <li>Email: contact@baileyselectricalservicesllc.com</li>
+            <li>Address: 195 AJK BLVD Lewisburg, PA 17837</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="services.html">Services</a></li> -->
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/baileyselectricalservices/"
+              target="_blank"
+              >F</a
+            >
+          </div>
+        </div>
+      </div>
+      <p>
+        &copy; 2024 Bailey's Electrical Services, LLC. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+      }
+
+      function startSlideshow() {
+        setInterval(function() {
+          showSlides(slideIndex += 1);
+        }, 5000); // Change slide every 5 seconds
+      }
+
+      // Start the slideshow cycle
+      startSlideshow();
+    </script>
+      
+  </body>
+</html>

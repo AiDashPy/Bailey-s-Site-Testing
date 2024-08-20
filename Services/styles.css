@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
   justify-content: center; /* Centers items horizontally */
+  /* max-width: 60%; */
+  /* flex: 1 1 10%; */
 }
 
 header {
@@ -41,7 +43,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /*nav ul li {*/
@@ -118,6 +120,7 @@ nav ul li a:hover {
   padding: 0;
   margin: 0;
   min-width: 190px;
+  z-index: 999;
 }
 
 .dropdown-menu .dropdown-item {
@@ -151,6 +154,8 @@ nav ul li:hover > .dropdown {
   background-color: #ffffff; /* White service item background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease-in-out;
+  /* flex: 1 1 43%; */
+  /* flex: 1 1 40%; */
 }
 
 .service-item:hover {
@@ -169,7 +174,7 @@ nav ul li:hover > .dropdown {
 }
 
 .description h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
   color: #000000; /* Dark text */
 }
@@ -179,27 +184,43 @@ nav ul li:hover > .dropdown {
   color: #666666; /* Medium gray text */
 }
 
+footer {
+  /* background-color: black; */
+  /* color: white; */
+  /* margin-top: 5px; */
+  padding: 5px 0;
+  position: relative;
+  /* text-align: center; */
+  bottom: 0;
+  /* left: 0; */
+  width: 100%;
+}
+
 /* Media query for mobile */
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
+  .neocontainer {
+    width: 100%;
   }
 
-  header {
+  /* .site-header {
+    max-width: 110%;
+  } */
+
+  /* header {
     padding: 10px 0;
-  }
+  } */
 
-  .menu-icon {
+  /* .menu-icon {
     display: block;
     font-size: 1.5rem;
-  }
+  } */
 
-  nav ul {
+  /* nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: 0;
     background-color: #000000;
     z-index: 1;
@@ -232,5 +253,37 @@ nav ul li:hover > .dropdown {
     width: auto;
     box-shadow: none;
     background-color: transparent;
+  } */
+
+  header {
+    font-size: 0.9rem;
   }
+
+  .site-header {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    /* color: white; */
+    /* text-decoration: none; */
+    padding: 0.5rem 0.3rem;
+    /* flex: 1 1 1px; */
+    /* display: block; */
+  }
+
+  .service-item {
+    /* width: 100%; */
+    /* margin: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* White service item background */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow */
+    /* transition: transform 0.3s ease-in-out; */
+    flex: 1 1 40%;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
+
+  
 }

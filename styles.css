@@ -61,6 +61,29 @@ section p {
   width: 20%;
 }
 
+.banner {
+  background-color: rgb(211, 34, 34);
+  /* padding: 0 0; */
+}
+
+#banner {
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+#banner h1 {
+  font-size: 1.5em;
+}
+
+#banner a {
+  color: black;
+}
+
 /* Hero section */
 #hero {
   background-size: cover;
@@ -162,6 +185,10 @@ footer p {
 
 .logo-link {
   text-decoration: none;
+  color:white;
+  font-size: 0.65em;
+  text-align: center;
+  line-height: 12px;
 }
 
 .logo-image {

@@ -77,6 +77,10 @@ nav ul li a:hover {
 
 .logo-link {
   text-decoration: none;
+  color:white;
+  font-size: 0.65em;
+  text-align: center;
+  line-height: 12px;
 }
 
 .logo-image {

@@ -321,7 +321,7 @@ footer p {
   } */
 
   header {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .site-header {
@@ -343,7 +343,7 @@ footer p {
     background-color: #ffffff; /* White service item background */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow */
     /* transition: transform 0.3s ease-in-out; */
-    flex: 1 1 40%;
+    flex: 1 1 45%;
   }
 
   /* footer {

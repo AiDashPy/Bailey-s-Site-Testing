@@ -193,6 +193,35 @@ nav ul li:hover > .dropdown {
   color: #666666; /* Medium gray text */
 }
 
+.service-item-text {
+  width: 95%;
+  margin: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* White service item background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  /* flex: 1 1 43%; */
+  /* flex: 1 1 40%; */
+}
+
+.service-item-text:hover {
+  transform: translateY(-5px); /* Lift on hover */
+}
+
+.service-item-logo {
+  max-width: 100%;
+  margin: 20px;
+  padding: 15px;
+  /* transition: transform 0.3s ease-in-out; */
+  text-align: center;
+  object-fit:scale-down;
+  /* background-size:inherit; */
+  /* flex: 1 1 43%; */
+  /* flex: 1 1 40%; */
+}
+
+
 /* footer {
   background-color: black;
   color: white;

@@ -221,6 +221,10 @@ nav ul li:hover > .dropdown {
   /* flex: 1 1 40%; */
 }
 
+.service-item-logo img {
+  max-width: 95vw;
+}
+
 
 /* footer {
   background-color: black;

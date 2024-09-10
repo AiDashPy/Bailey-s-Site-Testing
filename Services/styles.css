@@ -210,7 +210,7 @@ nav ul li:hover > .dropdown {
 }
 
 .service-item-logo {
-  max-width: 100%;
+  min-width: 100%;
   margin: 20px;
   padding: 15px;
   /* transition: transform 0.3s ease-in-out; */
